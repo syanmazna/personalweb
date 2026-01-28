@@ -1,0 +1,354 @@
+@font-face {
+    font-family: 'rubik';
+    src: url(font/RubikOne-Regular.ttf);
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.container-navbar {
+    width: 1250px;
+    height: 62px;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+.name {
+    position: relative;
+    font-size: 15pt;
+    float: left;
+    top: px;
+    left: 25px;
+    font-family: 'rubik';
+}
+
+.linkedin {
+    width: 160px;
+    height: 40px;
+    border-radius: 25px;
+    position: relative;
+    float: right;
+    top: 10px;
+    left: 120px;
+    font-size: 15pt;
+    background-color: #FF4C00;
+    color: aliceblue;
+    font-family: 'rubik';
+    z-index: 2;
+}
+
+.linkedin:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.linkedin:active {
+    transform: scale(0.5);
+    transition: 0.5s;
+
+}
+
+.email {
+    width: 160px;
+    height: 40px;
+    border-radius: 25px;
+    position: relative;
+    float: right;
+    top: 10px;
+    right: 210px;
+    font-size: 15pt;
+    color: #FF4C00;
+    background-color: aliceblue;
+    font-family: 'rubik';
+    z-index: 2;
+}
+
+.email:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.email:active {
+    transform: scale(0.5);
+    transition: 0.5s;
+    
+}
+
+#pp {
+    width: 480px;
+    height: auto;
+    position: relative;
+    float: right;
+    top: 10px;
+    z-index: -1;
+}
+
+.container-about{
+    width: 1250px;
+    height: 550px;
+}
+
+.judul {
+    font-size: 25pt;
+    font-family: 'rubik';
+    position: relative;
+    float: left;
+    right: 180px;
+    top: 100px;
+    color: #FF4C00;
+}
+
+.about {
+    width: 500px;
+    height: 100px;
+    font-size: 18pt;
+    position: relative;
+    float: left;
+    left: 80px;
+    top: 50px;
+    
+}
+
+.skill{
+    width: 1250px;
+    height: 450px;
+}
+
+#mskill{
+    font-size: 25pt;
+    font-family: 'rubik';
+    position: relative;
+    float: center;
+    left: 550px;
+    color: #FF4C00;
+}
+
+.container-figma, .container-canva, .container-ibis, .container-webdev {
+    width: 250px;
+    height: 350px;
+    border-radius: 45px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.container-figma {
+    float: left;
+    left: 50px;
+}
+
+.container-canva{
+    float: left;
+    left: 100px;
+}
+
+.container-ibis {
+    float: left;
+    left: 150px;
+}
+
+.container-webdev{
+    float: left;
+    left: 200px;
+}
+
+#figma {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    float: center;
+    left: 20px;
+    top: 10px;
+}
+
+#canva {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    float: center;
+    top: -100px;
+    left: 0px;
+    top: 10px;
+}
+
+#ibis {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    float: center;
+    left: 30px;
+    top: 20px;
+}
+
+#webdevlogo {
+    width: 240px;
+     position: relative;
+    float: center;
+    left: 0px;
+    top: 30px;
+}
+
+.text-figma {
+    font-size: 18pt;
+    position: relative;
+    float: center;
+    left: 80px;
+}
+
+.text-canva {
+    font-size: 18pt;
+    position: relative;
+    float: center;
+    top: -50px;
+    left: 0px;
+    text-align: center;
+}
+
+.text-ibis {
+    font-size: 18pt;
+    position: relative;
+    float: center;
+    top: 15px;
+    left: 0px;
+    text-align: center;
+}
+
+.text-webdev{
+    font-size: 18pt;
+    position: relative;
+    float: center;
+    top: 45px;
+    left: 0px;
+    text-align: center;
+}
+
+.container-figma:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.container-canva:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.container-ibis:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.container-webdev:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#mysertif {
+    font-size: 25pt;
+    font-family: 'rubik';
+    position: relative;
+    float: center;
+    left: 500px;
+    color: #FF4C00;
+}
+
+#htmlc, #webc, #uic{
+    font-size: 18pt;
+    /* font-family: 'rubik'; */
+    position: relative;
+    float: center;
+    left: 550px;
+}
+
+#html{
+    position: relative;
+    float: center;
+    left: 400px;
+    width: 500px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#html:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#web, #uiux{
+    position: relative;
+    float: center;
+    left: 400px;
+    width: 500px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#web:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#uiux:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#myproject {
+    font-size: 25pt;
+    font-family: 'rubik';
+    position: relative;
+    float: center;
+    left: 550px;
+    color: #FF4C00;
+}
+
+#projectnya {
+    position: relative;
+    float: center;
+    width: 1250px;
+}
+
+#mylogo{
+    font-size: 25pt;
+    font-family: 'rubik';
+    position: relative;
+    float: center;
+    left: 580px;
+    color: #FF4C00;
+}
+
+#logonya{
+    position: relative;
+    float: center;
+    left: 20px;
+    width: 1200px;
+}
+
+.container-footer{
+    width: 1250px;
+    height: 200px;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    background-color: #FF4C00;
+    border-radius: 10px;
+}
+
+#see{
+    color: aliceblue;
+    font-size: 50pt;
+    position: relative;
+    float: left;
+    left: 20px;
+    font-family: 'rubik';
+}
+
+#hand{
+    position: relative;
+    float: left;
+    left: 20px;
+    width: 200px;
+}
+
+#dogy{
+    width: 200px;
+    position: relative;
+    float: right;
+}
