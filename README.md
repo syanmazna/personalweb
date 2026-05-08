@@ -7,7 +7,7 @@ Proyek ini dibangun menggunakan kombinasi tools desain dan teknologi web berikut
 
 - **Frontend:** HTML5, CSS, JavaScript (Vanilla)
 - **Design Tools:** Figma, Ibis Paint X, Canva
-- **Deployment:** [Vercel](https://personalweb-alpha-seven.vercel.app/Canva.html)
+- **Deployment:** [Vercel](https://personalweb-alpha-seven.vercel.app/)
 
 ## ✨ Key Features
 - **Direct Email Integration:** Fitur "Email Me" menggunakan EmailJS, sehingga pengunjung bisa mengirim pesan langsung tanpa harus membuka aplikasi email eksternal.
