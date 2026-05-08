@@ -4,22 +4,20 @@ btnEmail.addEventListener('click', async (e) => {
     e.preventDefault(); 
 
     const { value: formValues } = await Swal.fire({
-        title: 'Send a Message to Syan',
+        title: 'Send a Message',
         html:
             '<input id="swal-name" class="swal2-input" placeholder="Your Name">' +
-            '<input id="swal-email" class="swal2-input" placeholder="Your Email Address">' +
             '<textarea id="swal-message" class="swal2-textarea" placeholder="Write your message here..."></textarea>',
         focusConfirm: false,
         showCancelButton: true,
         confirmButtonText: 'Send 🚀',
         preConfirm: () => {
             const name = document.getElementById('swal-name').value;
-            const email = document.getElementById('swal-email').value;
             const message = document.getElementById('swal-message').value;
-            if (!name || !email || !message) {
-                Swal.showValidationMessage('Tolong isi semua field ya!');
+            if (!name || !message) {
+                Swal.showValidationMessage('Isi nama dan pesannya dulu ya!');
             }
-            return { name, email, message };
+            return { name, message };
         }
     });
 
@@ -28,16 +26,14 @@ btnEmail.addEventListener('click', async (e) => {
 
         const templateParams = {
             from_name: formValues.name,
-            user_email: formValues.email,
-            message: formValues.message
+            message: formValues.message 
         };
 
-        // Pastikan ID ini sudah kamu ganti sesuai dashboard EmailJS
         emailjs.send('service_r8kh2gr', 'template_atvan2i', templateParams)
             .then(() => {
-                Swal.fire('Berhasil!', 'Pesan kamu udah terkirim ke Syan.', 'success');
+                Swal.fire('Berhasil!', 'Pesan sudah masuk ke email Syan.', 'success');
             }, (error) => {
-                Swal.fire('Yah gagal...', 'Coba lagi nanti ya, kayaknya jaringannya rewel.', 'error');
+                Swal.fire('Gagal!', 'Cek koneksi atau ID EmailJS kamu.', 'error');
             });
     }
 });
