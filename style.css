@@ -390,6 +390,18 @@ a {
     padding: 0;
 }
 
+    .container-navbar, 
+    .container-about, 
+    .skill, 
+    .certification, 
+    .project, 
+    .Logo,
+    footer {
+        display: flexbox;
+        margin-left: 0px;
+        justify-content: center;
+    }
+
     body {
         margin-left: 10px;
         margin-right: 10px;
