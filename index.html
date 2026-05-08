@@ -4,12 +4,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Syandana Mazna Aisyah</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("2DdRrsgkaQJ8rnGDp");
+       })();
+    </script>
 </head>
 <body>
     <div class="container-navbar">
         <div class="navbar">
             <p class="name">Syandana Mazna Aisyah</p>
-            <a href="mailto:syandanamazna11@gmail.com"><button class="email">Email Me</button></a>
+            <button class="email" id="btn-email">Email Me</button>
             <a href="https://www.linkedin.com/in/syandana-mazna-aisyah/"><button class="linkedin" onclick="clicklinked">My LinkedIn</button></a>
         </div>
     </div>
@@ -94,6 +101,7 @@
         <p id="mylogo">My Logo</p>
         <img id="logonya" src="img/stiker.png" alt="logo">
     </div>
+<script src="script.js"></script>
 </body>
 <footer>
     <div class="container-footer">
