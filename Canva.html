@@ -4,17 +4,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canva</title>
     <link rel="stylesheet" href="Canva.css">
+    <!-- SweetAlert2 buat pop-up-nya -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- Library EmailJS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<!-- Inisialisasi ID EmailJS kamu -->
+<script type="text/javascript">
+   (function(){
+      emailjs.init("2DdRrsgkaQJ8rnGDp");
+   })();
+</script>
 </head>
 <body>
     <div class="container-navbar">
         <div class="navbar">
             <p class="name">Syandana Mazna Aisyah</p>
-            <a href="mailto:syandanamazna11@gmail.com"><button class="email">Email Me</button></a>
+            <div id="button-navbar">
+            <button class="email" id="btn-email">Email Me</button>
             <a href="https://www.linkedin.com/in/syandana-mazna-aisyah/"><button class="linkedin" onclick="clicklinked">My LinkedIn</button></a>
+            </div>
         </div>
     </div>
    <span id="MS">My Skill: Canva</span>
 
    <img src="img/canva.webp" alt="ibis">
+   <script src="Canva.js"></script>
 </body>
 </html>

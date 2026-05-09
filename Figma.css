@@ -3,28 +3,58 @@
     src: url(font/RubikOne-Regular.ttf);
 }
 
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body{
     overflow-x: hidden;
     margin-left: 5px;
     margin-right: 100px;
 }
 
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+
 .container-navbar {
-    margin-left: 30px;
-    margin-right: 30px;
-    width: 1200px;
+    width: 100%;
+    justify-content: center;
+    /* margin-left: 30px;
+    margin-right: 30px; */
+    /* width: 1200px; */
     height: 62px;
     z-index: 2;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     border-radius: 10px;
 }
 
+#button-navbar{
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+}
+
+.navbar {
+    width: 97%;
+    max-width: 2000px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 15px;
+   
+}
+
 .name {
-    position: relative;
-    font-size: 15pt;
-    float: left;
-    top: px;
-    left: 25px;
+   font-weight: bold;
+    font-size: 1.2rem;
     font-family: 'rubik';
 }
 
@@ -33,9 +63,11 @@ body{
     height: 40px;
     border-radius: 25px;
     position: relative;
+    top: -5px;
+    /* position: relative;
     float: right;
     top: 10px;
-    left: 120px;
+    left: 120px; */
     font-size: 15pt;
     background-color: #FF4C00;
     color: aliceblue;
@@ -49,7 +81,7 @@ body{
 }
 
 .linkedin:active {
-    transform: scale(0.5);
+    transform: scale(0.8);
     transition: 0.5s;
 
 }
@@ -59,9 +91,12 @@ body{
     height: 40px;
     border-radius: 25px;
     position: relative;
+    right: 10px;
+    top: -5px;
+    /* position: relative;
     float: right;
     top: 10px;
-    right: 210px;
+    right: 210px; */
     font-size: 15pt;
     color: #FF4C00;
     background-color: aliceblue;
@@ -75,18 +110,9 @@ body{
 }
 
 .email:active {
-    transform: scale(0.5);
+    transform: scale(0.8);
     transition: 0.5s;
     
-}
-
-#pp {
-    width: 480px;
-    height: auto;
-    position: relative;
-    float: right;
-    top: 10px;
-    z-index: -1;
 }
 
 /*navbar*/
@@ -94,7 +120,7 @@ body{
 #MS {
     position: relative;
     top: 50px;
-    left: -250px;
+    margin-left: 20px;
     font-family: 'rubik';
     color: #FF4C00;
     font-size: 60px;
@@ -134,4 +160,12 @@ img {
 .Rollet:active{
     transform: scale(0.9);
     /* transition: 0.5s; */
+}
+
+@media (max-width: 768px) {
+
+    .container-navbar{
+        height: 120px;
+        justify-content: center;
+    }
 }

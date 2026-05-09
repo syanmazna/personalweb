@@ -3,7 +3,8 @@
     src: url(font/RubikOne-Regular.ttf);
 }
 
-body {
+html, body {
+    width: 100%;
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -20,21 +21,40 @@ a {
 }
 
 .container-navbar {
-    margin-left: 30px;
-    margin-right: 30px;
-    width: 1200px;
+    width: 100%;
+    justify-content: center;
+    /* margin-left: 30px;
+    margin-right: 30px; */
+    /* width: 1200px; */
     height: 62px;
     z-index: 2;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     border-radius: 10px;
 }
 
+#button-navbar{
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+}
+
+.navbar {
+    width: 97%;
+    max-width: 2000px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 15px;
+   
+}
+
 .name {
-    position: relative;
-    font-size: 15pt;
-    float: left;
-    top: px;
-    left: 25px;
+   font-weight: bold;
+    font-size: 1.2rem;
     font-family: 'rubik';
 }
 
@@ -43,9 +63,11 @@ a {
     height: 40px;
     border-radius: 25px;
     position: relative;
+    top: -5px;
+    /* position: relative;
     float: right;
     top: 10px;
-    left: 120px;
+    left: 120px; */
     font-size: 15pt;
     background-color: #FF4C00;
     color: aliceblue;
@@ -59,7 +81,7 @@ a {
 }
 
 .linkedin:active {
-    transform: scale(0.5);
+    transform: scale(0.8);
     transition: 0.5s;
 
 }
@@ -69,9 +91,12 @@ a {
     height: 40px;
     border-radius: 25px;
     position: relative;
+    right: 10px;
+    top: -5px;
+    /* position: relative;
     float: right;
     top: 10px;
-    right: 210px;
+    right: 210px; */
     font-size: 15pt;
     color: #FF4C00;
     background-color: aliceblue;
@@ -85,57 +110,82 @@ a {
 }
 
 .email:active {
-    transform: scale(0.5);
+    transform: scale(0.8);
     transition: 0.5s;
     
 }
 
 #pp {
-    width: 480px;
-    height: auto;
+    display: flex;
     position: relative;
     float: right;
-    top: 10px;
+    right: 50px;
+    top: -50px;
+    width: 480px;
+    height: auto;
+    margin-right: 20px;
     z-index: -1;
 }
 
 .container-about{
-    width: 1250px;
-    height: 550px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+}
+
+.content-about {
+    width: 1500px;
+    height: 600px;
+    justify-content: space-between;
 }
 
 .judul {
     font-size: 25pt;
     font-family: 'rubik';
-    position: relative;
-    float: left;
-    right: 180px;
-    top: 100px;
+    display: flex;
+    justify-content: center;
     color: #FF4C00;
+    margin-bottom: 0px;
 }
 
 .about {
-    width: 500px;
-    height: 100px;
-    font-size: 18pt;
+    display: flex;
+    /* justify-content: left; */
+    padding-top: 20px;
+    margin-left: 20px;
     position: relative;
-    float: left;
-    left: 80px;
-    top: 50px;
-    
+    left: 100px;
+    width: 500px;
+    height: 300px;
+    font-size: 18pt;
+    top: 10px;
+}
+
+.container-skill{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 500px;
 }
 
 .skill{
-    width: 1250px;
-    height: 450px;
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    margin-top: 20px;
+    /* padding-right: 60px; */
 }
+
 
 #mskill{
     font-size: 25pt;
+    /* margin-left: 50px;
+    margin-bottom: 40px; */
+    text-align: center;
     font-family: 'rubik';
-    position: relative;
-    float: center;
-    left: 580px;
     color: #FF4C00;
 }
 
@@ -144,27 +194,8 @@ a {
     height: 350px;
     border-radius: 45px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    position: relative;
-}
-
-.container-figma {
-    float: left;
-    left: 50px;
-}
-
-.container-canva{
-    float: left;
-    left: 100px;
-}
-
-.container-ibis {
-    float: left;
-    left: 150px;
-}
-
-.container-webdev{
-    float: left;
-    left: 200px;
+   margin: 20px;
+    /* position: relative; */
 }
 
 #figma {
@@ -273,27 +304,43 @@ a {
     transform: scale(0.9);
 }
 
+.container-certif{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center; 
+    text-align: center;
+    width: 100%;
+    height: auto; 
+    min-height: 100vh;
+    margin-bottom: 1200px;
+    margin-top: 0px
+}
+
+.certification{
+    margin: 0px;
+    width: 1500px;
+    height: 600px;
+}
+
 #mysertif {
     font-size: 25pt;
     font-family: 'rubik';
-    position: relative;
-    float: center;
-    left: 500px;
     color: #FF4C00;
 }
 
 #htmlc, #webc, #uic{
     font-size: 18pt;
     /* font-family: 'rubik'; */
-    position: relative;
+    /* position: relative;
     float: center;
-    left: 550px;
+    left: 550px; */
 }
 
 #html{
-    position: relative;
+    /* position: relative;
     float: center;
-    left: 400px;
+    left: 400px; */
     width: 500px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
@@ -304,9 +351,9 @@ a {
 }
 
 #web, #uiux{
-    position: relative;
+    /* position: relative;
     float: center;
-    left: 400px;
+    left: 400px; */
     width: 500px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
@@ -321,38 +368,38 @@ a {
     transition: 0.5s;
 }
 
+.container-projek{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center; 
+    text-align: center;
+    width: 100%;
+}
+
 #myproject {
     font-size: 25pt;
     font-family: 'rubik';
-    position: relative;
-    float: center;
-    left: 550px;
     color: #FF4C00;
 }
 
 #projectnya {
-    position: relative;
-    float: center;
     width: 1250px;
 }
 
 #mylogo{
     font-size: 25pt;
     font-family: 'rubik';
-    position: relative;
-    float: center;
-    left: 580px;
     color: #FF4C00;
 }
 
 #logonya{
-    position: relative;
-    float: center;
-    left: 20px;
     width: 1200px;
 }
 
 .container-footer{
+    display: flex;
+    justify-content: space-around;
     width: 1250px;
     height: 200px;
     z-index: 2;
@@ -384,79 +431,90 @@ a {
 }
 
 @media (max-width: 768px) {
-    * {
-    position: relative;
-    left: -20px;
-    box-sizing: border-box; /* Biar padding gak nambah lebar elemen */
-    margin: 0;
-    padding: 0;
-}
-
-    .container-navbar, 
-    .container-about, 
-    .skill, 
-    .certification, 
-    .project, 
-    .Logo,
-    footer {
-        display: flexbox;
-        margin-left: 0px;
-        justify-content: center;
-    }
-
-    body {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
 
     .container-navbar{
-        display: flex;
-        width: 1250px;
-        flex-direction: column;
+        height: 120px;
         justify-content: center;
-        /* margin-left: 50px;
-        margin-right: 20px; */
-        padding: 20px; 
     }
 
     .container-about{
         display: flex;
         justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-left: 80px;
-        margin-right: 20px;
+    }
+
+    .content-about{
+        justify-content: left;
+        margin-bottom: 10px;
+    }
+
+    #pp {
+    width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-left: 140px;
+    float: center;
+    z-index: -1;
+    }
+
+    .about {
+    display: flex;
+    justify-content: left;
+    position: relative;
+    left: 85px;
+    width: 350px;
+    height: 300px;
+    font-size: 18pt;
+    top: -70px;
+    }
+
+    .judul {
+    font-size: 25pt;
+    margin-bottom: 40px;
+    font-family: 'rubik';
+    display: flex;
+    justify-content: center;
+    color: #FF4C00;
+    }
+
+    .container-skill{
+        display: flex;
+        justify-content: center;
+        width: 500px;
+        height: 2000px;
+        margin-bottom: -100px;
+        min-height: unset !important;
     }
 
     .skill {
-        margin-left: 150px;
-        margin-right: 150px;
+        flex-direction: column; 
+        align-items: center;   
     }
 
-    .certification {
-        margin-left: 150px;
-        margin-right: 150px;
+    #html, #web, #uiux{
+        width: 200px;
     }
 
-    .project {
-        margin-left: 150px;
-        margin-right: 150px;
+    .container-certif{
+        min-height: unset !important;
+        margin-bottom: 300px
     }
 
-    .Logo {
-        margin-left: 150px;
-        margin-right: 150px;
+    #projectnya, #logonya{
+        width: 400px;
     }
 
-    .container-footer {
-        margin-left: 150px;
-        margin-right: 150px;
+    .container-footer{
+       width: 98%;
+        height: 100px;
+        font-size: 12pt;
     }
 
-    .judul{
-       float: left;  
-       position: relative;
-       top: -40px;
-       left: 750px;
+    #hand, #dogy{
+        width: 100px;
+    }
+
+    #see{
+        font-size: 18pt;
     }
 }
